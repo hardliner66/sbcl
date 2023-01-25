@@ -10,7 +10,7 @@ jobs:
     strategy: 
       matrix: 
         options: [--with-sb-thread, --without-sb-thread, --without-sb-unicode]
-        arch: [x86, x86-64]
+        arch: [x86, x86-64, arm]
         subfeatures: ['']
         include:
           - { arch: x86-64, subfeatures: sse4, options: --with-sb-thread }
