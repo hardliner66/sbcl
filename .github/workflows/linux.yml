@@ -23,7 +23,7 @@ jobs:
     - name: instal host sbcl
       run: |
         sudo apt-get -qq update | true
-        sudo apt-get -qq install sbcl libcapstone-dev
+        sudo apt-get -qq install git sbcl libcapstone-dev
     - name: instal host gcc-multilib
       if: matrix.arch == 'x86'
       run: sudo apt-get -qq --no-install-recommends install gcc-multilib
